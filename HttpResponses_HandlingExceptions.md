@@ -13,7 +13,7 @@ no need to maintain any status string in response / success and failure will be 
 			http response code will be 400 and reason Object will be {reasonCode : "DataNotFound" , reasonDesc:"search returned no data , please provide valid data"}
 ```
 
-## Http Responses -
+## Http Response Codes -
 
 ```bash
 for Data Errors
@@ -31,5 +31,9 @@ for Standard Statuses
 ```
 maintain a key value pair for {key : "reasonCodes" , value : "http codes"} and a constants file for reasonCodes.
 
+## Rest Responses- 
+'''bash
+All responses should inherit from some standard response class.(Even reason class).
+'''
 reference -
 [rest api design] (https://medium.com/studioarmix/learn-restful-api-design-ideals-c5ec915a430f)
